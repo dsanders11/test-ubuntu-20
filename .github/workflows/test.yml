@@ -14,6 +14,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: test
-        run: ls /usr/lib/rpm/platform/
-      - name: test 2
-        run: cat /usr/lib/rpm/platform/armv7hl-linux/macros
+        run: ls /usr/bin/
