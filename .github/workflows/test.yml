@@ -10,8 +10,8 @@ on:
 
 jobs:
   test:
-    name: Test Ubuntu latest
-    runs-on: ubuntu-latest
+    name: Test Ubuntu 20
+    runs-on: ubuntu-20.04
     steps:
       - name: test
         run: /bin/strip -h
