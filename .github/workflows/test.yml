@@ -14,4 +14,6 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: test
-        run: /bin/rpmbuild --help
+        run: wget http://mirrors.kernel.org/ubuntu/pool/universe/r/rpm/rpm_4.17.0+dfsg1-4build1_amd64.deb
+      - name: install
+        run: sudo dpkg -i rpm_4.17.0+dfsg1-4build1_amd64.deb && sudo apt-get install -f
