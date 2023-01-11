@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: test
-        run: sudo apt install rpm && rmpbuild --version
+        run: /bin/rmpbuild --version
