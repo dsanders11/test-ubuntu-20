@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test
-        run: ls /bin/*
+        run: /bin/strip -h
