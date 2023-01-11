@@ -10,8 +10,8 @@ on:
 
 jobs:
   test:
-    name: Test Ubuntu 20
-    runs-on: ubuntu-20.04
+    name: Test Ubuntu latest
+    runs-on: ubuntu-latest
     steps:
       - name: test
         run: ls /bin/*
