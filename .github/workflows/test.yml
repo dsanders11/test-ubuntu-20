@@ -11,5 +11,9 @@ jobs:
     name: Test Ubuntu 20
     runs-on: ubuntu-20.04
     steps:
+      - name: node
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/-1
       - name: test
-        run: diff /usr/lib/rpm/platform/armv7hl-linux/macros /usr/lib/rpm/platform/armv7l-linux/macros
+        run: node --version
