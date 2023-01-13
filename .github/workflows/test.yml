@@ -14,6 +14,6 @@ jobs:
       - name: node
         uses: actions/setup-node@v3
         with:
-          node-version: lts/-1
+          node-version: lts/-2
       - name: test
         run: node --version
